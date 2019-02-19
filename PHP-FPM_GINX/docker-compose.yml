@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: nginx:latest
+    ports:
+    - "8080:80"
+    volumes:
+      - /Users/fnieto/Documents/Source/repos/testing:/source/testing
+      - /Users/fnieto/Documents/Source/repos/containerization/PHP-FPM_GINX/example.site.conf:/etc/nginx/conf.d/example.site.conf
